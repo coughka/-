@@ -1,0 +1,398 @@
+@import url('../css/normalize.css');
+@import url('../css/slider.css');
+@import url("../fonts/webfonts/fontawesome-all.css");
+@import url("../css/media.css");
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900');
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size:1rem;
+}
+
+a {
+    text-decoration:none;
+}
+
+section {
+    margin:2.5% 0;
+}
+
+.menu-top {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    padding:2.5% 0;  
+}
+
+.menu-top a {
+    margin: 0 2.5%;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;  
+}
+
+.menu-top a:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    order:1;   
+}
+
+.menu-top a:nth-child(2), .menu-top a:nth-child(3) {
+    order:0;
+}
+
+.menu-top a:nth-child(4), .menu-top a:nth-child(5) {
+    order:2;
+}
+
+.top {
+    background-image:url("../images/background-top-bike.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+
+    height:100vh;
+}
+
+.about-us-content, .twitter-content {
+    padding:2.5% 0;
+    margin:0 auto;
+    width:70%;
+    text-align:center;
+    display:grid;
+    grid-template-columns:1fr;
+    align-items:center;
+    justify-content:center;
+}
+
+.about-us-content h2, .about-us-content p {
+    text-align:center;
+    font-size:1.1rem;
+}
+
+/* WORK */
+
+.title-section {
+    font-weight:bold;
+    font-size:1.1rem;
+    text-transform:uppercase;
+}
+
+.work {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+    
+}
+
+.work-item {
+    
+    min-height:75vh;
+    background-size:cover;
+    display:grid;
+    /*align-content:center;
+    justify-content:center; */ 
+}
+
+.work-item-content {
+    width:75%;
+    margin:0 auto;
+    text-align:center;
+    align-self: start;
+}
+
+.bike-company {
+    grid-column:1/3;
+    background-image: url("../images/bike-company-background.png");  
+}
+
+.work-logo {
+    place-self:center;
+}
+
+.work-item-txt {
+    padding-top:25%;
+    background-position:bottom;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+
+}
+
+.vintage-olivia {
+    grid-column:3;
+    background-image: url("../images/seat.png");
+
+}
+
+.la-boriosa {
+   
+    grid-row:2;
+    grid-column:1;
+    background-image: url("../images/bike-seat-background.png");
+    
+}
+
+.vintage {
+    grid-row:2;
+    grid-column:2/4;
+    background-image: url("../images/vintage-bike-background.png"); 
+}
+
+.since {
+    background-image: url("../images/red-bike-background-rama.png");
+}
+
+.retro {
+    background-image: url("../images/mavic-made-in-france.png");
+}
+
+.just-bike {
+    background-image: url("../images/red-bike-background.png");
+}
+
+/* TWITTER */
+
+.time {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.twitter-content i {
+    font-size:1.6rem;
+    color:rgba(86,199,238,1);
+}
+
+.twitter-content i:hover {
+    transform: scale(1.2);
+}
+
+.twitter-content p {
+    font-size:1.6rem;
+    color:rgba(132,132,132,1);
+}
+
+.twitter-content h2 {
+    font-size:1.1rem;
+}
+
+.shop-content {
+    display: grid;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows:repeat(3,1fr);
+
+    
+}
+
+.shop-item {
+    height:37vh;
+    display:grid;
+    background-size:cover;
+    background-position:center;
+    
+}
+
+.shop-item:hover {
+    opacity: 0.9;
+}
+
+.item-8:hover {
+    opacity:1;
+}
+
+.item-1 {
+    grid-row:1;
+    grid-column:1;
+    background-image:url("../images/Layer 19.png");
+}
+
+.item-2 {
+    grid-row:1;
+    grid-column:2;
+    background-image:url("../images/Layer 21.png");
+}
+
+.item-3 {
+    
+    grid-column:3;
+    grid-row:1/3;
+    background-image:url("../images/Layer 22.png");
+    height:74vh;
+}
+
+.item-4 {
+    grid-column:4;
+    grid-row:1 / span 2;
+    background-image:url("../images/Layer 25.png");
+    height:74vh;
+    
+}
+
+.item-5 {
+    grid-row:1;
+    grid-column:5/7;
+    background-color:rgba(111,182,154,1);
+    text-align:center;
+    
+}
+
+.item-6 {
+    grid-column:5;
+    grid-row:2;
+    background-image:url("../images/Layer 24.png");
+    
+}
+
+.item-7 {
+    grid-column:1/ span 2;
+    grid-row:2;
+    background-image:url("../images/Layer 20.png");
+}
+
+.item-8 {
+    grid-row:3;
+    grid-column:1/7;
+    background-color:rgba(40,47,53,1);
+    
+}
+
+.item-9 {
+    grid-row:2;
+    grid-column:6;
+    background-image:url("../images/Layer 26.png");
+}
+
+.shop-title {
+    margin:5% 0;
+    color:white;
+}
+
+
+.btn {
+    
+    display:inline-block;
+        padding:1rem 4rem;
+        width:10rem;
+        height:2rem;
+        cursor: pointer;
+        text-align: center;
+        line-height:2rem;
+        color:white;
+        
+        text-transform: uppercase;
+        font-size:0.9rem;
+        border:1px solid white;
+    
+}
+
+.btn:hover {
+    font-weight:600;
+}
+
+.btn a:visited {
+    color:white;
+}
+
+.btn a:hover {
+    font-weight: 700;
+}
+
+.mailing-content {
+    display:grid;
+    align-content:space-evenly;
+    text-align:center;
+    height:40vh;
+    width:50%;
+    margin:0 auto;
+}
+
+.mailing-title {
+    font-style: italic;
+    font-weight:300;
+    font-size:1.5rem;
+    color:rgba(132,132,132,1);
+}
+
+form {
+    width:100%;
+    display:inline-flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+input[type = "email"] {
+    height:4.225rem;
+    border:none;
+    padding-left:0.5rem;
+    border:1px solid gray;
+    width:90%;
+    
+   
+}
+
+input[type = "submit"] {
+    color:white;
+    background-color:rgba(111,182,154,1);
+    text-transform: uppercase;
+    border:none;
+    height:4.225rem;
+    min-width:4.225rem;
+    width:10%;
+    cursor: pointer;
+    margin:0 5px;
+}
+
+.footer-content {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items:center;
+    height:20vh;
+    justify-items: center;
+}
+
+.social-bar {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.social-bar i {
+    font-size:1.5rem;
+    margin-right:2.5%;
+    border-radius:50%;
+    padding:1rem;
+    color:white;
+    
+}
+
+i.fa-facebook-f {
+    padding:1rem 1.45rem;
+    background-color:rgba(83,123,189,1);
+}
+
+i.fa-pinterest {
+    background-color:rgba(235,87,87,1);
+}
+
+.social-bar i.fa-twitter {
+    background-color:rgba(86,199,238,1);
+}
+
+.social-bar {
+    margin:0 auto;
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
