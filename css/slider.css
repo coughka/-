@@ -1,0 +1,55 @@
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+  
+  
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: mandatory;
+}
+.slides::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+
+.slides > div {
+  flex-shrink: 0;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: white;
+  border:solid 1px gray;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+
+.slider > a:active {
+  top: 1px;
+}
+
+.slider > a:focus {
+  background: #000;
+}
+
