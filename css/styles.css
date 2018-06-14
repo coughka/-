@@ -1,7 +1,7 @@
 @import url('../css/normalize.css');
 @import url('../css/slider.css');
 @import url("../fonts/webfonts/fontawesome-all.css");
-@import url("../css/media.css");
+@import url("media.css");
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900');
 
 
@@ -12,6 +12,7 @@ body {
 
 a {
     text-decoration:none;
+    color:rgba(40,47,53,1);
 }
 
 section {
@@ -114,6 +115,10 @@ section {
 
 .work-logo {
     place-self:center;
+}
+
+.work-logo a {
+    color:white;
 }
 
 .work-item-txt {
